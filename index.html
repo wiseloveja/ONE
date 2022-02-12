@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RESPONSIVE FLEXBOX</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .flex-left, .flex-left2 {
+      background: #f1f1f1;
+      padding: 10px;
+      flex: 25%;
+    }
+
+    .flex-right, .flex-right2 {
+      background: dodgerblue;
+      padding: 10px;
+      flex: 25%;
+    }
+
+    @media(max-width: 800px) {
+      .flex-container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <p>플렉스 칼럼드롭</p>
+  <p>오늘은 토요일 즐거운 토요일</p>
+  <p>오늘은 CSS 정리하는 날</p>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore nam in sint? Accusamus atque excepturi, provident explicabo fugit quo! Quaerat aperiam porro molestiae iste enim, veritatis sint tempore nostrum praesentium?</p>
+  <div class="flex-container">
+    <div class="flex-left">1</div>
+    <div class="flex-right">2</div>
+    <div class="flex-left2">3</div>
+    <div class="flex-right2">4</div>
+  </div>
+</body>
+</html>

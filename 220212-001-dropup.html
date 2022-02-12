@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DROPUP</title>
+  <style>
+    .dropbtn {
+      background: dodgerblue;
+      color: #fff;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      outline: none;
+    }
+
+    .dropup {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropup-content {
+      display: none;
+      position: absolute;
+      background: #f1f1f1;
+      min-width: 160px;
+      bottom: 50px;
+    }
+
+    .dropup-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropup:hover .dropup-content {
+      display: block;
+    }
+
+    .dropup:hover .dropbtn {
+      background: #2980b9;
+    }
+
+  </style>
+</head>
+<body>
+  <p>오늘은 토요일</p>
+  <p>수업이 있는날</p>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+  <div class="dropup">
+    <button class="dropbtn">Dropup</button>
+    <div class="dropup-content">
+      <a href="#">Link1</a>
+      <a href="#">Link2</a>
+      <a href="#">Link3</a>
+    </div>
+  </div>
+</body>
+</html>
